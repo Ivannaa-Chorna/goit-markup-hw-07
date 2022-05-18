@@ -64,7 +64,7 @@ img{
     align-items: center;
 }
     
-.logo{
+.header-nav__logo{
     display: block;
     color:var(--link-color);
     font-family: 'Raleway';
@@ -75,7 +75,7 @@ img{
     
 }
 
-.logo-park{
+.header-nav__park{
     color: var(--primary-tex-color);
 }
 /*------------------------------PAGES------------*/
@@ -85,11 +85,11 @@ img{
     margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child){
+.site-nav .site-nav__item:not(:last-child){
 margin-right: 50px;
 }
 
-.site-nav .link{
+.site-nav .site-nav__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -103,20 +103,19 @@ margin-right: 50px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus{
+.site-nav .site-nav__link:hover, 
+.site-nav .site-nav__link:focus{
     color: var(--link-color);
 }
 .site-nav .current{
     color: var(--link-color);
 }   
 
-.link .current{
+.site-nav__link .current{
     position: relative;
 }
-.link .current::after{
+.site-nav__link .current::after{
 display: inline-block;
-content: "";
 position: absolute;
 left: 0;
 width:100% ;
@@ -132,7 +131,7 @@ background-color: var(--link-color);
     margin-left: auto;
 }
 
-.contact-top .link{
+.contact-top .contact-top__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -144,22 +143,26 @@ background-color: var(--link-color);
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-top .communication +.communication{
+.contact-top .contact-top__communication +.contact-top__communication{
     margin-left: 30px;
 }
 
-.contact-top .contact-icon {
+.contact-top .contact-top__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.site-nav .communication a {
+.site-nav .contact-top__communication a {
   display: flex;
   align-items: center;
 }
+.site-nav .contact-top__link:hover, 
+.site-nav .contact-top__link:focus{
+    color: var(--link-color);
+}
 
 /*------------------------------BISNESS------------*/
-.bisness{
+.conect{
     background-color: var(--accent-color);
     line-height: 1.36;
     text-align: center;
@@ -182,15 +185,14 @@ background-color: var(--link-color);
     background-repeat: no-repeat;
 }
 
-.bisness-title{
+.conect__title{
     color: var(--item-color);
     margin-top: 0;
     font-weight: 900;
     font-size: 44px;
     margin-bottom: 30px;
 }
-.button{
-    color: var(--item-color);
+.conect__button{
     background-color: var(--link-color);
     border-radius: 4px;
     padding: 10px 32px;
@@ -207,6 +209,10 @@ background-color: var(--link-color);
     margin-bottom: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
+}
+.button--light{
+color: var(--item-color);
+ 
 }
 .button-list{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
