@@ -52,9 +52,9 @@ color: var(--item-color);
 }
 .button-list{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: var(--button-color);
+    }
 }
 
-.button-list:hover,
-.button-list:focus{
-background-color:var(--button-color);
-}
