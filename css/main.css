@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --primary-tex-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2F303A;
+  --link-color: #2196F3;
+  --item-color: #FFFFFF;
+  --button-color: #188CE8;
+  --adress-color:rgba(255, 255, 255, 0.6);
+  --solid-header: #ECECEC;
+  --work-person:  #F5F4FA;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,7 +39,7 @@ html {
   color: var(--primary-tex-color);
 }
 
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -36,6 +61,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  /*outline: 2px solid blue*/
 }
 
 .header {
@@ -150,39 +183,6 @@ img {
 .site-nav .contact-top__link:hover,
 .site-nav .contact-top__link:focus {
   color: var(--link-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(50%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-:root {
-  --primary-tex-color: #212121;
-  --title-text-color: #757575;
-  --accent-color: #2F303A;
-  --link-color: #2196F3;
-  --item-color: #FFFFFF;
-  --button-color: #188CE8;
-  --adress-color:rgba(255, 255, 255, 0.6);
-  --solid-header: #ECECEC;
-  --work-person:  #F5F4FA;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  /*outline: 2px solid blue*/
 }
 
 .conect {
