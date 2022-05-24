@@ -150,18 +150,6 @@ img {
   position: relative;
 }
 
-.site-nav__link.current::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  bottom: -1px;
-  border-radius: 2px;
-  background-color: var(--link-color);
-}
-
 /*------------------------------contact-top------------*/
 .contact-top {
   display: -webkit-box;
